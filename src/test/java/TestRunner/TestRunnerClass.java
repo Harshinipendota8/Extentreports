@@ -9,8 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		
 		features="src/test/java/Feature",
-		glue="StepDefinition",
-		plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		glue="StepDefinition"
+		//plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)
 
 public class TestRunnerClass {

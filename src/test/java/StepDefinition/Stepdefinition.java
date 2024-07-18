@@ -42,6 +42,7 @@ public class Stepdefinition {
 		 driver.findElement(By.name("password")).sendKeys("secret_sauce");
 	}
 	
+	
 	@AfterStep
 	public static void tearDown(Scenario scenario) throws IOException
 	{
@@ -53,6 +54,24 @@ public class Stepdefinition {
 		byte[] b = FileUtils.readFileToByteArray(new File(path));
 		scenario.attach(b, "image/png", path);
 	}
+	
+	
+//	@Then("user clicks selcets on on item or click on add to cart")
+//	public void user_clicks_selcets_on_on_item_or_click_on_add_to_cart() {
+////	      driver.findElement(By.id("login-button")).submit();
+////			driver.findElement(By.xpath("//button[@name='add-to-cart-sauce-labs-backpack']")).click();
+////	
+//	System.out.println("here is the extra code ");	
+//	}
+//	@Then("user click on the cart button")
+//	public void user_click_on_the_cart_button() {
+//		  //driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
+//			System.out.println("here is the extra code ");	
+//
+//	}
+
+
+
 	
 	
 }
